@@ -16,3 +16,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Task 2 styles */
+.styles-for-timer {
+  display: flex;
+  font-size: 40;
+}
+
+.styles-for-fields {
+  padding: 20px;
+}
