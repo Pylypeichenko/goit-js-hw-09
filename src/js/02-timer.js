@@ -42,6 +42,7 @@ function turnStartButtonOn(data) {
   if (selectedDatetime <= currentTime) {
     Notiflix.Notify.failure('Please choose a date in the future');
     Notiflix.Loading.remove(2000);
+    return;
   } else {
     startButton.removeAttribute('disabled');
     Notiflix.Notify.success('Now press the button "Start"');
