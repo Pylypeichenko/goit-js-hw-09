@@ -39,7 +39,7 @@ flatpickr(dateInput, options);
 function turnStartButtonOn(data) {
   const selectedDatetime = data.getTime();
   const currentTime = Date.now();
-  if (selectedDatetime <= currentTime) {
+  if (selectedDatetime < currentTime) {
     Notiflix.Notify.failure('Please choose a date in the future');
     Notiflix.Loading.remove(2000);
     return;
