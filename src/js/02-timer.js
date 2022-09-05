@@ -65,6 +65,7 @@ function startCountdown(futureDatetime, currentTime) {
 
     const deltaTime = futureDatetime - currentTime;
     if (futureDatetime < currentTime) {
+      Notiflix.Notify.success('Your time has come !!!');
       return;
     }
     console.log(convertMs(deltaTime));
