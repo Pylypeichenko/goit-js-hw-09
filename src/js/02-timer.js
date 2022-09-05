@@ -64,6 +64,9 @@ function startCountdown(futureDatetime, currentTime) {
     const currentTime = Date.now();
 
     const deltaTime = futureDatetime - currentTime;
+    if (futureDatetime < currentTime) {
+      return;
+    }
     console.log(convertMs(deltaTime));
     const time = convertMs(deltaTime);
     updateTimerValues(time);
